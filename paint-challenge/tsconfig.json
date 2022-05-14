@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+      "outDir": "dist",
+      "moduleResolution": "node",
+      "rootDir": ".",
+      "esModuleInterop": true,
+      "module": "commonjs",
+      "target": "ES2019",       
+      "sourceMap": true,
+      "allowJs": true,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "resolveJsonModule": true
+  },
+
+}

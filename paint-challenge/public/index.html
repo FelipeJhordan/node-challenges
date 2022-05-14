@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/style/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <title>Desafio</title>
+</head>
+
+<body>
+  <main class="main container-fluid d-flex flex-column column align-items-center justify-content-center pt-3 mt-5">
+    <div>
+      <h1 class="display-4 pb-5">Formulário</h1>
+    </div>
+    <form class="form g-3 flex-fill" action="#">
+      <div class="row">
+        <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-end">
+          <h2 class="display-6">Parede frontal</h2>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="frontWallHeight" class="form-label">Altura</label>
+          <input type="number" step="0.001" class="form-control" name="frontWallHeight" id="frontWallHeight" value="0" required>
+          <div class="invalid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="frontWallWidth" class="form-label">Largura</label>
+          <input type="number" step="0.001" class="form-control" name="frontWallWidth" id="frontWallWidth" value="0" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="frontWallWindows" class="form-label">Janela(s)</label>
+          <input type="number" step="0.001" class="form-control" name="frontWallWindows" id="frontWallWindows" value="0" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="frontWallDoors" class="form-label">Porta(s)</label>
+          <input type="number" step="0.001" class="form-control" name="frontWallDoors" id="frontWallDoors" value="0" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-end">
+          <h2 class="display-6">Parede Direita</h2>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="rightWallHeight" class="form-label">Altura</label>
+          <input type="number" step="0.001" class="form-control" name="rightWallHeight" id="rightWallHeight" value="0" required>
+          <div class="invalid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="rightWallWidth" class="form-label">Largura</label>
+          <input type="number" step="0.001" class="form-control" name="rightWallWidth" id="rightWallWidth" value="0" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="rightWallWindows" class="form-label">Janela(s)</label>
+          <input type="number" step="0.001" class="form-control" name="rightWallWindows" id="rightWallWindows" value="0" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="rightWallDoors" class="form-label">Porta(s)</label>
+          <input type="number" step="0.001" class="form-control" name="rightWallDoors" id="rightWallDoors" value="0" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-end">
+          <h2 class="display-6">Parede Trazeira</h2>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="backWallHeight" class="form-label">Altura</label>
+          <input type="number" step="0.001" class="form-control" name="backWallHeight" id="backWallHeight" value="0" required>
+          <div class="invalid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="backWallWidth" class="form-label">Largura</label>
+          <input type="number" step="0.001" class="form-control" name="backWallWidth" id="backWallWidth" value="0" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="backWallWindows" class="form-label">Janela(s)</label>
+          <input type="number" step="0.001" class="form-control" name="backWallWindows" id="backWallWindows" value="0" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="backWallDoors" class="form-label">Porta(s)</label>
+          <input type="number" step="0.001" class="form-control" name="backWallDoors" id="backWallDoors" value="0" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-end">
+          <h2 class="display-6">Parede Esquerda</h2>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="leftWallHeight" class="form-label">Altura</label>
+          <input type="number" step="0.001" class="form-control" name="leftWallHeight" id="leftWallHeight" value="0" required>
+          <div class="invalid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="leftWallWidth" class="form-label">Largura</label>
+          <input type="number" step="0.001" class="form-control" name="leftWallWidth" id="leftWallWidth" value="0" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="leftWallWindows" class="form-label">Janela(s)</label>
+          <input type="number" step="0.001" class="form-control" name="leftWallWindows" id="leftWallWindows" value="0" required>
+          <div class="valid-feedback">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <label for="leftWallDoors" class="form-label">Porta(s)</label>
+          <input type="number" step="0.001" class="form-control" name="leftWallDoors" id="leftWallDoors" value="0" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 d-grid gap-2 mx-auto">
+          <button class="btn btn-primary rounded" type="submit">Calcular</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModalSuccess" tabindex="-1" aria-labelledby="myModalSuccessLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-success" id="myModalSuccessLabel">Sucesso!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex">
+            <div class="row">
+              <div class="col-12">
+                <p class="lead">Você irá precisar de:</p>
+              </div>
+
+
+              <div id="modalContent"></div>
+              
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p class="lead modal-message"></p>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModalError" tabindex="-1" aria-labelledby="myModalErrorLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-danger" id="myModalErrorLabel">Erro!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex">
+            <div class="row">
+              <div class="col-12">
+                <p class="lead">As entradas não comprem as seguintes validações:</p>
+              </div>
+
+
+              <div id="modalContentError"></div>
+              
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p class="lead modal-message"></p>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="static/scripts/index.js"></script>
+</body>
+
+</html>

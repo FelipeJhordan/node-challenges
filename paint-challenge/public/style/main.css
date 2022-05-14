@@ -1,0 +1,54 @@
+
+form.form .row {
+    margin-bottom: 2rem !important;
+}
+
+.display-6 {
+    font-size: 2.2em !important;
+}
+
+.div-image {
+    position: relative;
+    width: fit-content;
+    padding-right: 0.6rem;
+    padding-bottom: 0.7rem;
+}
+
+.div-image img{
+    width: 2rem;
+}
+.div-image span{
+    position: absolute;
+    right: 0;   
+    bottom: 0;
+}
+
+.modal-message {
+    font-size: 0.9em;
+    color: #df8525;
+    align-self: flex-end;
+}
+
+@media only screen and (max-width: 800px) {
+    main.main {
+      margin-top: 0.4rem !important;
+      padding-top: 0 !important;
+    }
+
+    main h2 {
+        padding-top: 2rem;
+    }
+
+    form.form .row {
+        margin-bottom: 2rem !important;
+    }
+
+    h1.pb-5 {
+        padding-bottom: 0!important;
+    }
+
+    .display-6 {
+        font-size: 1.8em !important;
+    }
+
+  }
