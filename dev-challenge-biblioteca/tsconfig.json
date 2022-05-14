@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "incremental": true,                              
+    "incremental": true,
     "target": "ES2017",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "module": "commonjs",                              
+    "module": "commonjs",
     "rootDir": "./src",
-    "outDir": "./dist",                                   
+    "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   }
 }

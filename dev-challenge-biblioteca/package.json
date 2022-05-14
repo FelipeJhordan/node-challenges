@@ -22,7 +22,6 @@
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
     "eslint": "^8.15.0",
-    "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",

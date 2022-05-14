@@ -3,13 +3,15 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["google", "prettier"],
+  "extends": [ "prettier", "eslint:recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
-  "rules": {},
+  "rules": {
+      "no-unused-vars": "off"
+  },
   "ignorePatterns": ["dist/*"]
 }
