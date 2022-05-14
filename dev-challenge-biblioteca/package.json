@@ -4,7 +4,9 @@
   "description": "<br />\r <p align=\"center\">\r     <img src=\"https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png\" alt=\"Logo\" width=\"200\">",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
