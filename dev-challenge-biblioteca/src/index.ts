@@ -15,7 +15,7 @@ const boostrap = async () => {
 
   server.setErrorHandler(errorMiddleware);
 
-  server.listen(PORT, (err, address) => {
+  server.listen(PORT, '0.0.0.0', (err, address) => {
     if (err) {
       console.error(err);
       process.exit(1);
