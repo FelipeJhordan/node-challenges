@@ -4,8 +4,7 @@
   "description": "<br />\r <p align=\"center\">\r     <img src=\"https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png\" alt=\"Logo\" width=\"200\">",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist && tsc -p tsconfig.json",
+    "build": "npx tsc",
     "start": "node dist/index.js",
     "start:dev": "ts-node-dev src/index.ts",
     "lint": "eslint --ext .js,.ts .",
