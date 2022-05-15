@@ -15,7 +15,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^3.29.0"
+    "@fastify/autoload": "^4.0.0",
+    "@fastify/routes": "^4.0.0",
+    "fastify": "^3.29.0",
+    "promised-sqlite3": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.33",
