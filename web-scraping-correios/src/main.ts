@@ -1,13 +1,13 @@
-import dotenv from "dotenv";
-import express, { Express, Request, Response } from "express";
+import dotenv from 'dotenv';
+import express, { Express, Request, Response } from 'express';
 
 dotenv.config();
 
-const app: Express = express();
+let app: Express = express();
 const port = process.env.PORT || 8080;
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Express + TypeScript Server");
+app.get('/', (req: Request, res: Response) => {
+  res.send('Express + TypeScript Server');
 });
 
 app.listen(port, () => {
