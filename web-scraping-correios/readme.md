@@ -6,7 +6,8 @@ Criar o um endpoint que busca um cep via web-scraping
 
 ### Rotas da aplicação:
 
-<b>[GET] </b> /api/v1/location/:cep : A rota deverá informas informações sobre o cep fornecido<br><br>
+- Rota base https://web-scrapping-correios-felipe.herokuapp.com/api/v1
+- <b>[GET] </b> /location/:cep : A rota deverá informas informações sobre o cep fornecido<br><br>
 
 ## Techs:
 
@@ -42,29 +43,11 @@ Vale salientar que as camadas de presentation/usecase foram testadas e criadas c
 
 ## Link
 
-Foi feito o deploy da aplicação para a plataforma railway. https://node-challenges-production.up.railway.app/obras
+Foi feito o deploy da aplicação para a plataforma heroku. https://web-scrapping-correios-felipe.herokuapp.com/api/v1
 
-## Prints
+## Links uteis
 
-### POST /obras ( Criar )
-
-![Create](prints/create.png)
-
-### GET /obras (Buscar todos )
-
-![Find](prints/get.PNG)
-
-### get /obras/:id (Buscar Unico )
-
-![FindUnique](prints/getUnique.PNG)
-
-### PUT /obras/:id ( Atualizar )
-
-![Update](prints/atualizar.PNG)
-
-### DELETE /obras/:id ( Deletar )
-
-![Delete](prints/delete.PNG)
+- https://elements.heroku.com/buildpacks/jontewks/puppeteer-heroku-buildpack
 
 # Comunidade DevChallenge
 
