@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
+    "postbuild": "npm run start",
     "start": "node dist/main.js",
     "start:dev": "tsnd --respawn src/main.ts",
     "test": "jest",
