@@ -1,7 +1,11 @@
 import { Request, Response } from 'express';
-import { FindLocationByCEP } from '../../../../../src/presentation/controllers/location/FindLocationByCEP.controller';
+import { FindLocationByCepUsecase } from '../../../../../src/domain/usecase/location/FindLocationByCEP.usecase';
+import { FindLocationByCEPController } from '../../../../../src/presentation/controllers/location/FindLocationByCEP.controller';
 
-const sut = new FindLocationByCEP();
+const findLocationByCEPUsecase: FindLocationByCepUsecase = {
+  execute: jest.fn(),
+};
+const sut = new FindLocationByCEPController(findLocationByCEPUsecase);
 
 const requestStub = {
   params: {
