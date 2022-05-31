@@ -1,32 +1,6 @@
-<br />
-<p align="center">
-    <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png" alt="Logo" width="200">
-
-  <h3 align="center">Biblioteca by <a href="https://github.com/Lorenalgm">Lorena</a></h3>
- <br />
-  <p align="center">
-     Sistema de gerenciamento de biblioteca
-       <br />
-    <br />
-    <a href="https://github.com/devchallenge-io/biblioteca-backend">Desafio</a>
-    ·
-    <a href="https://www.devchallenge.com.br/">DevChallenge</a>
-  </p>
-</p>
-
-## Índice
-
-* [Devchallenge](#devchallenge) 
-* [Desafio](#desafio)
-* [Techs](#techs)
-* [Como começar](#como-começar)
-* [Compartilhe](#compartilhe)
-
-# Devchallenge
-<a href="https://devchallenge.now.sh/"> DevChallenge</a> permite que você evolua suas skills como programador! Participe da nossa <a href="https://discord.gg/yvYXhGj">comunidade</a> o/
 
 # Desafio
-Seu desafio é criar o backend para um sistema de gerenciamento de uma biblioteca!
+Criar o backend para um sistema de gerenciamento de uma biblioteca!
 
 ## Requisitos:
 ### Rotas da aplicação:
@@ -35,22 +9,48 @@ Seu desafio é criar o backend para um sistema de gerenciamento de uma bibliotec
 <b>[PUT] </b> /obras/:id: : A rota deverá atualizar as informações de titulo, editora, foto e autores da obra com o id presente nos parâmetros da rota<br><br>
 <b>[DELETE] </b> /obras/:id: : A rota deverá deletar a obra com o id presente nos parâmetros da rota<br>
 
+## Techs: 
+- Fastify
+- Sqlite
+- Eslint/Prettier
 
-# Techs: 
-- Tecnologia que preferir :)
+## Como/Por que foi feito
+### Texto longo                                                                                                                                                        O desafio foi realizado para melhorar algumas habilidades, melhorar o portifólio e estudar alguns conceitos.                                                 
+Foi utilizado o framework fastify, pois eu queria ter uma idéia de como funciona esse framework, pois é o framework node back-end que eu menos tenho conhecimento ( restify também ).
+Basicamente a organização do projeto foi feito tentando aplicar a arquitetura hexagonal, que separa as camadas de uma forma onde não há um forte acoplamento entre as camadas do sistema. ( clean arch foi inspirada nesses conceitos ).                                                                                                     
+Para ilustrar os benefícios dessa arquitetura ou de arquiteturas e estruturas que utilizam fraco acoplamento como norte, eu utilizei injeção de depêndencia e também inversão de depêndencia de forma manual ( dá para aplicar com libs, ou alguns frameworks ( nest  ) já realizam automaticamente.
+Também utilizei o padrão de software factory para criar diferentes formas/estratégias de armazenar os dados, mas de forma que extendam ou implementem uma interface comum.
 
-# Como começar:
-1 - Use esse template (clicando em Use this template) ou faça um fork deste repositório com o código inicial<br>
-2 - Leia as instruções no readme.md<br>
-3 - Comece a codar! Sinta-se livre para utilizar o fluxo de trabalho que ache mais confortável<br>
-4 - Compartilhe seu resultado com a comunidade! #devchallenge
+## Texto resumido
+- Foi utilizado ou o objetivo era utilizar a arquitetura hexagonal ou uma versão dela.
+- Fastify
+- Pattern Factory
+- Injeção de depêndencia e também Inversão de depêndencia. ( de forma manual )
+
+## Como executar
+- npm install
+- npm run start:dev
+
+## Link 
+Foi feito o deploy da aplicação para a plataforma railway.                                                                           https://railway.app/project/a1948edb-f56a-4be5-8b19-2141f25fd060/service/6e6dd039-ee85-4a30-8fa4-d04812d15aa3?id=91b49926-8a92-4db8-ae92-c2ddd4281920/obras
 
 
-# Compartilhe!
-Inicie seu projeto utilizando esse template no seu github como um repositório público<br>
-Faça um print, gif ou vídeo e compartilhe o resultado com a #devchallenge ou marcando nosso perfil @devchallenge!<br>
+## Prints
+###  POST /obras ( Criar )
+![Create](prints/create.png)
 
-Desafio criado por  <a href="https://www.linkedin.com/in/lorenagmontes/">Lorena</a> :)
+###  GET /obras (Buscar todos )
+![Find](prints/get.PNG)
+
+###  get /obras/:id (Buscar Unico )
+![FindUnique](prints/getUnique.PNG)
+
+###  PUT /obras/:id ( Atualizar )
+![Update](prints/atualizar.PNG)
+
+###  DELETE /obras/:id ( Deletar )
+![Delete](prints/delete.PNG)
+
 
 
 # Comunidade DevChallenge
