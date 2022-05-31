@@ -5,4 +5,4 @@ export const locationRoutes = Router();
 
 const findLocationController = new FindLocationByCEPController();
 
-locationRoutes.get('/location', findLocationController.handle);
+locationRoutes.get('/location/:cep', findLocationController.handle);
