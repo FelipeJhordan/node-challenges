@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/main.js",
+    "build": "rimraf dist && tsc",    
+    "start": "node dist/src/main.js",
     "start:dev": "tsnd --respawn src/main.ts",
     "test": "jest",
     "test:watch": "jest --watch"
@@ -31,6 +31,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^28.1.0",
+    "rimraf": "^3.0.2",
     "ts-jest": "^28.0.3",
     "ts-node-dev": "^2.0.0",
     "tsyringe": "^4.7.0",
