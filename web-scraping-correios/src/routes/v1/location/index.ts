@@ -1,7 +1,8 @@
 import { Router } from 'express';
+import { FindLocationByCEPController } from '../../../presentation/controllers/location/FindLocationByCEP.controller';
 
 export const locationRoutes = Router();
 
-locationRoutes.get('/location', (req, res) => {
-  res.send('Olá');
-});
+const findLocationController = new FindLocationByCEPController();
+
+locationRoutes.get('/location', findLocationController.handle);

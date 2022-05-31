@@ -1,14 +1,17 @@
 import dotenv from 'dotenv';
 import express, { Express } from 'express';
+import 'reflect-metadata';
 import { routesV1 } from './routes/v1';
 
 dotenv.config();
 
-const boostrap = () => {
+const boostrap = async () => {
   const app: Express = express();
   const port = process.env.PORT || 8080;
 
   app.use(express.json());
+
+  // await applyIoc();
 
   const firstApiVersion = 1;
   const apiVersion = process.env.API_VERSION || firstApiVersion;

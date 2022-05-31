@@ -1,13 +1,13 @@
 import { Request, Response } from 'express';
-import { IController } from '../protocols';
+import { autoInjectable } from 'tsyringe';
+import { FindLocationByCepUsecase } from '../../../domain/usecase/location/FindLocationByCEP.usecase';
+import { IController } from '../protocols/iController';
 
-export class FindLocationByCEP implements IController {
-  async handle(request: Request, response: Response): Promise<any> {
-    return await response.json({
-      city: 'Uberaba',
-      state: 'MG',
-      neighborhood: 'Alfredo Freire II',
-      road: 'Rua Mônica Machiyama',
-    });
-  }
+@autoInjectable()
+export class FindLocationByCEPController implements IController {
+  constructor(private findLocationByCEP?: FindLocationByCepUsecase) {}
+  handle = async (request: Request, response: Response): Promise<Response> => {
+    console.log(this.findLocationByCEP);
+    return await response.json(this.findLocationByCEP?.execute(199));
+  };
 }
