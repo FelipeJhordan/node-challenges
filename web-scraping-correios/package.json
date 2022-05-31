@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsc",
     "start:prod": "node ./dist/main.js",
     "start:dev": "tsnd --respawn src/main.ts",
     "test": "jest",
