@@ -5,13 +5,18 @@ import { routesV1 } from './routes/v1';
 
 dotenv.config();
 
+const server_sleep = 4000;
+
 const boostrap = async () => {
   const app: Express = express();
   const port = process.env.PORT || 8080;
 
   app.use(express.json());
-
-  // await applyIoc();
+  app.use(
+    express.urlencoded({
+      extended: true,
+    }),
+  );
 
   const firstApiVersion = 1;
   const apiVersion = process.env.API_VERSION || firstApiVersion;
@@ -20,9 +25,11 @@ const boostrap = async () => {
     app.use(routesV1.apiTag, routesV1.router);
   }
 
-  app.listen(port, () => {
-    console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
-  });
+  setTimeout(() => {
+    app.listen(port, () => {
+      console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
+    });
+  }, server_sleep);
 };
 
 boostrap();
